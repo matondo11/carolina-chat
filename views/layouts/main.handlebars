@@ -1,0 +1,22 @@
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    {{#if CustomCss}}
+      <link rel="stylesheet" href="styles/{{CustomCss}}.css" />
+    {{/if}}
+  </head>
+  <body>
+    {{{body}}}
+    <script> window.chtlConfig = { chatbotId: "7963188479" } </script>
+    <script
+      async
+      data-id="7963188479"
+      id="chtl-script"
+      type="text/javascript"
+      src="https://chatling.ai/js/embed.js"
+    ></script>
+  </body>
+</html>

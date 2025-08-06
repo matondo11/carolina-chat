@@ -1,0 +1,35 @@
+<form method="post" action="/signin" class="form-signin">
+  <h1>Faça o seu login</h1>
+  
+  <div class="inputContainer">
+    <input
+      type="email"
+      name="email"
+      id="email"
+      class="input"
+      placeholder="Email"
+    />
+    <i class="emailImg"></i>
+    <input
+      type="password"
+      name="senha"
+      id="senha"
+      class="input"
+      placeholder="Senha"
+    />
+    <i class="senhaImg"></i> 
+    {{#if errorMsg}}
+      <p style="color: red; margin-top: 8px">{{errorMsg}}</p>
+    {{/if}}
+  </div>
+
+  <div id="checkboxConteiner">
+    <input type="checkbox" name="" id="checkbox" />
+    <label for="checkbox" id="checkboxLabel">lembrar-me</label>
+  </div>
+  <div class="btnContainer">
+    <button type="submit" id="btn_entrar"><strong>Entrar</strong></button><br />
+    <p> Esqueceu a sua senha ? <a href="#">Clique aqui</a></p>
+  </div>
+ 
+</form>

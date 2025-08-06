@@ -1,0 +1,22 @@
+<form action="/cadastro" method="post" class="form-signup">
+  <fieldset>
+    <legend>
+      Formulário de cadastro
+    </legend>
+    <label for="nome_form">Nome</label>
+    <input type="text" name="nome" id="nome_form" required />
+    <br />
+
+    <div>
+      <label for="email_form">Email</label>
+      <input type="email" name="email" id="email_form" required />
+      <br />
+      <label for="senha_form">Senha</label>
+      <input type="password" name="senha" id="senha_form" required />
+    </div>
+    {{#if errorMsg}}
+      <p style="color: red;">{{errorMsg}}</p>
+    {{/if}}
+    <button type="submit">Criar conta</button>
+  </fieldset>
+</form>
